@@ -1,0 +1,166 @@
+$accent: #E6F64B;
+$accent-hover: #E9F75E;
+$primary: #171925;
+$primary-light: #2B2E44;
+$primary-lightest: #B6BAD2;
+
+
+body {
+    background: url(../img/hero-bg.png) center no-repeat;
+    position: relative;
+    background-size: cover;
+    color: $primary;
+}
+.mask {
+    background: #171925;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.94;
+}
+.block-mask {
+    background: #171925;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.94;
+}
+.accent-btn {
+    border-radius: 6px;
+    border: none;
+    background-color: $accent;
+    color: $primary;
+    &:hover {
+        background-color: $accent-hover;
+    }
+}
+// HEADER
+header {
+    padding: 48px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    nav {
+        a {
+            color: #fff;
+            margin-right: 55px;
+            font-size: 17px;
+            line-height: 24px;
+            font-weight: 600;
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+                border-bottom: 6px dotted $accent;
+            }
+        }
+    }
+    .buttons {
+        button {
+            height: 44px;
+            border-radius: 6px;
+            font-size: 17px;
+            line-height: 24px;
+            font-weight: 600;
+        }
+        .login {
+            background-color: transparent;
+            color: #fff;
+            border: 2px solid #2B2E44;
+            padding: 0px 25px;
+        }
+        .sign-up {
+            border: none;
+            background-color: $accent;
+            padding: 0px 17px;
+            margin-left: 16px;
+        }
+    }
+}
+// HERO
+.hero {
+    display: flex;
+
+    &-descr {
+        margin-top: 128px;
+        margin-left: 110px;
+        color: #fff;
+        width: 55%;
+        h1 {
+            font-size: 70px;
+            line-height: 80px;
+            font-weight: 800;
+            margin-bottom: 34px;
+            span {
+                color: $accent;
+            }
+        }
+        p {
+            font-size: 22px;
+            line-height: 32px;
+            margin-bottom: 56px;
+        }
+        button {
+            padding: 16px 32px;
+            font-size: 19px;
+            line-height: 24px;
+            font-weight: 700;
+        }
+    }
+}
+// BLOCKS 
+.blocks {
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .block {
+        display: flex;
+        position: relative;
+        padding: 32px 0px 32px 40px;
+        width: 550px;
+        height: 200px;
+        background-color: rgba(41, 44, 65, 0.5);
+        border-radius: 26px;
+        margin-bottom: 48px;
+        &-descr {
+            color: #fff;
+            width: 310px;
+            h5 {
+                font-size: 24px;
+                line-height: 24px;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+            p {
+                color: $primary-lightest;
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: 400;
+                margin: 0;
+            }
+        }
+
+        embed {
+            position: absolute;
+            top: -55px;
+            right: -75px;
+            svg {
+                width: 156px;
+                height: 204px;
+            }
+        }
+        .bag {
+            top: -70px;
+        }
+    }
+    .dragon {
+        position: absolute;
+        right: -30px;
+        bottom: -110px;
+    }
+}
+// POPULAR GAMES
+.popular {
+    height: 200px;
+}

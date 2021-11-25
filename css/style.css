@@ -1,0 +1,191 @@
+body {
+  background: url(../img/hero-bg.png) center no-repeat;
+  position: relative;
+  background-size: cover;
+  color: #171925;
+}
+
+.mask {
+  background: #171925;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.94;
+}
+
+.block-mask {
+  background: #171925;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.94;
+}
+
+.accent-btn {
+  border-radius: 6px;
+  border: none;
+  background-color: #E6F64B;
+  color: #171925;
+}
+
+.accent-btn:hover {
+  background-color: #E9F75E;
+}
+
+header {
+  padding: 48px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav a {
+  color: #fff;
+  margin-right: 55px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+header nav a:hover {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 6px dotted #E6F64B;
+}
+
+header .buttons button {
+  height: 44px;
+  border-radius: 6px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+header .buttons .login {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #2B2E44;
+  padding: 0px 25px;
+}
+
+header .buttons .sign-up {
+  border: none;
+  background-color: #E6F64B;
+  padding: 0px 17px;
+  margin-left: 16px;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-descr {
+  margin-top: 128px;
+  margin-left: 110px;
+  color: #fff;
+  width: 55%;
+}
+
+.hero-descr h1 {
+  font-size: 70px;
+  line-height: 80px;
+  font-weight: 800;
+  margin-bottom: 34px;
+}
+
+.hero-descr h1 span {
+  color: #E6F64B;
+}
+
+.hero-descr p {
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 56px;
+}
+
+.hero-descr button {
+  padding: 16px 32px;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.blocks {
+  position: relative;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blocks .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 32px 0px 32px 40px;
+  width: 550px;
+  height: 200px;
+  background-color: rgba(41, 44, 65, 0.5);
+  border-radius: 26px;
+  margin-bottom: 48px;
+}
+
+.blocks .block-descr {
+  color: #fff;
+  width: 310px;
+}
+
+.blocks .block-descr h5 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.blocks .block-descr p {
+  color: #B6BAD2;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.blocks .block embed {
+  position: absolute;
+  top: -55px;
+  right: -75px;
+}
+
+.blocks .block embed svg {
+  width: 156px;
+  height: 204px;
+}
+
+.blocks .block .bag {
+  top: -70px;
+}
+
+.blocks .dragon {
+  position: absolute;
+  right: -30px;
+  bottom: -110px;
+}
+
+.popular {
+  height: 200px;
+}
+/*# sourceMappingURL=style.css.map */
