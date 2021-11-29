@@ -162,5 +162,138 @@ header {
 }
 // POPULAR GAMES
 .popular {
-    height: 200px;
+    margin-top: 80px;
+    h2 {
+        font-size: 44px;
+        font-weight: 800;
+        line-height: 80px;
+        color: #FFF;
+        margin-bottom: 56px;
+        span {
+            color: $accent;
+        }
+    }
+    &-blocks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .popular-block {
+            cursor: pointer;
+            position: relative;
+            embed {
+                border-radius: 20px;
+                margin-bottom: 22px;
+            }
+            p {
+                color: #fff;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 600;
+                margin: 0;
+                margin-bottom: 26px;
+            }
+            &:hover {
+                opacity: 0.3;
+            }
+        }
+    }
+}
+// REVIEWS
+.reviews {
+    margin-top: 82px;
+    color: #fff;
+    position: relative;
+    .gem {
+        position: absolute;
+        right: 0;
+    }
+    .un_gem {
+        position: absolute;
+        bottom: 100px;
+        left: 0;
+    }
+    h1 {
+        margin-bottom: 56px;
+        text-align: center;
+    }
+    .carousel {
+        height: 500px;
+    }
+    .review-block {
+        display: inline-block !important;
+        width: 32%;
+        padding: 48px;
+        background-color: #292C4180;
+        border-radius: 26px;
+        h4 {
+            font-size: 22px;
+            line-height: 24px;
+            font-weight: 700;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            color: $primary-lightest;
+            margin: 0;
+        }
+        &_header {
+            display: flex;
+            align-items: center;
+            .info { 
+                margin-left: 16px;      
+            }
+        }
+        &_body {
+            margin-top: 37px;
+            h4 {
+                margin-bottom: 9px;
+            }
+        }
+        .rating {
+            margin-top: 34px;
+        }
+    }
+    .review-block:nth-child(1) {
+        margin-right: 1.5%;
+    }
+    .review-block:nth-child(3) {
+        margin-left: 1.5%;
+    }
+    .carousel-indicators {
+        align-items: center;
+        li {
+            background-color: $accent;
+            border-radius: 100%;
+            width: 12px;
+            height: 12px;
+        }
+
+        .active {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+// FOOTER
+footer {
+    margin-top: 115px;
+    display: flex;
+    justify-content: space-between;
+    .copyright {
+        width: 60%;
+        color: #676A7C;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .terms {
+        color: #676A7C;
+        
+        a {
+            color: #fff;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+    }
 }
