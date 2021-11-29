@@ -217,6 +217,28 @@ header .buttons .sign-up {
   position: relative;
 }
 
+.popular-blocks .popular-block .image {
+  opacity: 1;
+  display: block;
+  height: auto;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.popular-blocks .popular-block .play {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  top: 50%;
+  margin-top: -70px;
+  text-align: center;
+}
+
 .popular-blocks .popular-block embed {
   border-radius: 20px;
   margin-bottom: 22px;
@@ -231,8 +253,12 @@ header .buttons .sign-up {
   margin-bottom: 26px;
 }
 
-.popular-blocks .popular-block:hover {
-  opacity: 0.3;
+.popular-blocks .popular-block:hover .image {
+  opacity: 0.5;
+}
+
+.popular-blocks .popular-block:hover .play {
+  opacity: 1;
 }
 
 .reviews {
@@ -262,8 +288,15 @@ header .buttons .sign-up {
 }
 
 .reviews .review-block {
-  display: inline-block !important;
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 32%;
+  height: 400px;
   padding: 48px;
   background-color: #292C4180;
   border-radius: 26px;
@@ -360,5 +393,9 @@ footer .terms a {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+}
+
+.privacy {
+  color: #FFF;
 }
 /*# sourceMappingURL=style.css.map */
