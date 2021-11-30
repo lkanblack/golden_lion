@@ -201,6 +201,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .burger-menu {
+        display: none;
+    }
+    .burger-list {
+        display: none;
+    }
     nav {
         a {
             color: #fff;
@@ -515,5 +521,253 @@ footer {
     h4 {
         font-weight: 700;
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container-fluid {
+        padding: 0 24px;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        padding: 24px 0;
+        position: relative;
+        .burger-menu {
+            display: block;
+            position: absolute;
+            left: 0;
+            cursor: pointer;
+        }
+        .burger-list {
+            position: absolute;
+            left: 0;
+            top: 100px;
+            flex-direction: column;
+            background-color: rgba(41, 44, 65, 0.9);
+            padding: 24px;
+            border-radius: 6px;
+            z-index: 30;
+            a {
+                color: #fff;
+                margin-bottom: 15px;
+                font-size: 18px;
+                font-weight: 700;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            button {
+                width: 120px;
+                margin-bottom: 15px;
+                height: 33px;
+                font-weight: 500;
+            }
+            button:nth-child(2) {
+                margin-bottom: 0;
+            }
+            .login {
+                background-color: transparent;
+                border: 2px solid $primary-lightest;
+                color: #fff;
+                border-radius: 6px;
+            }
+        }
+        .logo {
+            width: 194px;
+        }
+        nav {
+            display: none;
+        }
+        .buttons {
+            display: none;
+        }
+    }
+    .hero {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 104px;
+        &-descr {
+            width: 100%;
+            margin: 0;
+            h1 {
+                margin-top: 38px;
+                font-weight: 800;
+                font-size: 46px;
+                line-height: 52px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 28px;
+                font-weight: 500;
+            }
+            button {
+                height: 56px;
+                width: 100%;
+                font-size: 19px;
+                line-height: 24px;
+                font-weight: 700;
+            }
+        }
+    }
+    .blocks {
+        display: flex;
+        flex-direction: column;
+        .block {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 100%;
+            height: 280px;
+            padding: 25px 32px;
+            margin-bottom: 56px;
+            &-descr {
+                width: 100%;
+            }
+
+            embed {
+                width: 60%;
+                left: -20px;
+                top: -60px;
+            }
+            .bag {
+                width: 100%;
+                left: -160px;
+                top: -60px;
+            }
+            h5 {
+                font-size: 22px;
+                line-height: 32px;
+            }
+        }
+
+        .dragon {
+            position: static;
+            width: 100%;
+        }
+    }
+    .popular {
+        h2 {
+            font-size: 25px;
+            line-height: 31px;
+            font-weight: 800;
+            margin-bottom: 50px;
+        }
+        &-blocks {
+            flex-direction: column;
+            .popular-block {
+                width: 100%;
+            }
+        }
+    }
+    .reviews {
+        .carousel {
+            height: 430px;
+        }
+        h1 {
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 30px;
+            span {
+                color: $accent;
+            }
+        }
+        .gem {
+            width: 76px;
+            top: 40px;
+        }
+        .un_gem {
+            width: 80px;
+        }
+
+        .review-block {
+            width: 100%;
+            padding: 32px;
+            height: 100%;
+            h4 {
+                font-size: 20px;
+                margin: 0;
+            }
+            p {
+                font-size: 14px;
+            }
+            &_body {
+                margin-top: 21px;
+                margin-bottom: 22px;
+                h4 {
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+            }
+            .rating {
+                margin: 0;
+            }
+        }
+        .review-block:nth-child(2) {
+            display: none !important;
+        }
+
+        .review-block:nth-child(3) {
+            display: none !important;
+        }
+    }
+    footer {
+        margin: 0;
+        margin-top: 50px;
+        flex-direction: column;
+        .copyright {
+            width: 100%;
+        }
+        embed {
+            display: none;
+        }
+        .terms {
+            margin-top: 28px;
+            margin-bottom: 33px;
+            span {
+                margin: 0 24px;
+            }
+        }
+    }
+    .privacy {
+        h2 {
+            margin-top: 40px;
+        }
+    }
+
+    // POPUPS
+    .sign-popup {
+        top: 10px;
+        position: fixed;
+        width: 93%;
+        height: auto;
+        padding: 44px 44px 37px 44px;
+        flex-direction: column;
+        h1 {
+            font-size: 32px;
+            line-height: 24px;
+            font-weight: 700;
+        }
+        .inputs {
+            flex-direction: column;
+            flex-wrap: wrap;
+            input {
+                display: block;
+                width: 100%;
+            }
+            .input-container {
+                embed {
+                }
+            }
+        }
+        button {
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+    .login-popup {
+        position: fixed;
+        top: 10px;
+        width: 93%;
     }
 }
