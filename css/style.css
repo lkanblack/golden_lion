@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: url(../img/hero-bg.png) center no-repeat;
   position: relative;
@@ -615,7 +619,46 @@ footer .terms a {
   font-weight: 400;
 }
 
+footer .terms a:hover {
+  text-decoration: none;
+  color: #E9F75E;
+}
+
 .privacy {
   color: #FFF;
+}
+
+.privacy p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.privacy p span {
+  font-weight: 700;
+}
+
+.privacy a {
+  color: #fff;
+  font-weight: 700;
+}
+
+.privacy a:hover {
+  color: #E9F75E;
+  text-decoration: none;
+}
+
+.privacy h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 24px;
+  margin-top: 115px;
+  margin-bottom: 54px;
+}
+
+.privacy h4 {
+  font-weight: 700;
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */

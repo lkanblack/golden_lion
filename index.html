@@ -68,11 +68,13 @@
             <!-- HEADER -->
             <div class="col-md-12">
                 <header>
-                    <img src="./img/Logo.svg" type="logo">
+                    <a href="./index.html">
+                        <img src="./img/Logo.svg" type="logo">
+                    </a>
                     <nav>
-                        <a href="#">Features</a>
-                        <a href="#">Games</a>
-                        <a href="#">Reviews</a>
+                        <a href="#features">Features</a>
+                        <a href="#popular">Games</a>
+                        <a href="#reviews">Reviews</a>
                     </nav>
                     <div class="buttons">
                         <button class="login">Login</button>
@@ -91,13 +93,15 @@
                         </h1>
                         <p>Enjoy playing the most popular online slots. 
                         Free, fun and legal!</p>
-                        <button class="accent-btn">Choose the game</button>
+                        <a href="#popular">
+                            <button class="accent-btn">Choose the game</button>
+                        </a>
                     </div>
                 </div>
             </div>
             <!-- BLOCKS -->
             <div class="col-md-12">
-                <div class="blocks">
+                <div class="blocks" id="features">
                     <div class="block">
                         <div class="block-descr">
                             <h5>Like to play slot games? </h5>
@@ -128,7 +132,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <div class="popular">
+                <div class="popular" id="popular"> 
                     <h2>Most popular games <span>2021</span></h2>
                     <div class="popular-blocks">
                         <div class="popular-block">
@@ -180,7 +184,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <div class="reviews">
+                <div class="reviews" id="reviews">
                     <img class="gem" src="./img/Gem.svg" alt="gem">
                     <img class="un_gem" src="./img/unfoc_gem.svg" alt="un_gem">
                     <h1>Awesome reviews</h1>
