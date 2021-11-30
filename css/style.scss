@@ -10,6 +10,13 @@ body {
     position: relative;
     background-size: cover;
     color: $primary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    margin: 0 !important;
+    max-width: 90%;
 }
 .mask {
     background: #171925;
