@@ -3,6 +3,7 @@ $accent-hover: #E9F75E;
 $primary: #171925;
 $primary-light: #2B2E44;
 $primary-lightest: #B6BAD2;
+$error: #F64B4B;
 
 
 body {
@@ -44,7 +45,39 @@ body {
 .active-block {
     display: block !important;
 }
-// POPUP SIGN IN
+.active-flex {
+    display: flex !important;
+}
+// POPUP SIGN IN + LOGIN + INPUTRS
+.input-container{
+    position: relative;
+    width: auto;
+    embed {
+        position: absolute;
+        right: 13px;
+        top: 13px;
+    }
+}
+input {
+    width: 244px;
+    height: 44px;
+    margin-bottom: 24px;
+    border-radius: 6px;
+    border:none;
+    padding-left: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    &::placeholder {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #969CBF;
+    }
+    &:focus {
+        outline: none;
+    }
+}
 .sign-popup {
     display: none;
     position: relative;
@@ -71,36 +104,6 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-
-        .input-container{
-            position: relative;
-            width: auto;
-            embed {
-                position: absolute;
-                right: 13px;
-                top: 13px;
-            }
-        }
-        input {
-            width: 244px;
-            height: 44px;
-            margin-bottom: 24px;
-            border-radius: 6px;
-            border:none;
-            padding-left: 12px;
-            font-size: 16px;
-            line-height: 24px;
-            font-weight: 500;
-            &::placeholder {
-                font-size: 16px;
-                line-height: 24px;
-                font-weight: 500;
-                color: #969CBF;
-            }
-            &:focus {
-                outline: none;
-            }
-        }
     }
     button {
         width: 244px;
@@ -121,6 +124,73 @@ body {
                 text-decoration: none;
             }
         }
+    }
+}
+.login-popup {
+    position: absolute;
+    width: 332px;
+    height: 430px;
+    padding: 44px;
+    background-color: rgba(43, 46, 68, 0.9);
+    z-index: 20;
+    border-radius: 24px;
+    top: 49px;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    color: #fff;
+    .close-login {
+        position: absolute;
+        right: 26px;
+        top: 26px;
+        cursor: pointer;
+    }
+    h1 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 24px;
+        color: #fff;
+        margin-bottom: 44px;
+    }
+    a {
+        color: #fff;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        margin-bottom: 36px;
+        align-self: flex-start;
+
+        &:hover {
+            text-decoration: none;
+            color: $accent-hover;
+        }
+    }
+    button {
+        padding: 10px 0px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+    p {
+        margin-top: 23px;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 700;
+        a {
+            color: $accent;
+            &:hover {
+                color: $accent-hover;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.red-alert {
+    input {
+        border: 2px solid $error;
+    }
+    #at > svg{
+        color: red;
     }
 }
 // HEADER
@@ -276,15 +346,15 @@ header {
                 height: auto;
                 transition: .5s ease;
                 backface-visibility: hidden;
+                width: 100%;
             }
             .play {
                 transition: .5s ease;
                 opacity: 0;
                 position: absolute;
+                top: 35%;
                 left: 50%;
-                margin-left: -30px;
-                top: 50%;
-                margin-top: -70px;
+                transform: translate(-50%, -50%);
                 text-align: center;
             }
             embed {
