@@ -15,9 +15,8 @@ body {
           align-items: center;
 }
 
-.container {
-  margin: 0 !important;
-  max-width: 90%;
+.container-fluid {
+  padding: 0 96px;
 }
 
 .mask {
@@ -152,7 +151,7 @@ header .buttons .sign-up {
   display: flex;
   position: relative;
   padding: 32px 0px 32px 40px;
-  width: 550px;
+  width: 49%;
   height: 200px;
   background-color: rgba(41, 44, 65, 0.5);
   border-radius: 26px;
@@ -230,6 +229,7 @@ header .buttons .sign-up {
 .popular-blocks .popular-block {
   cursor: pointer;
   position: relative;
+  width: 21%;
 }
 
 .popular-blocks .popular-block .image {
