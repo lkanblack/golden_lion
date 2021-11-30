@@ -13,6 +13,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .container-fluid {
@@ -44,6 +45,124 @@ body {
 
 .accent-btn:hover {
   background-color: #E9F75E;
+}
+
+.active-block {
+  display: block !important;
+}
+
+.sign-popup {
+  display: none;
+  position: relative;
+  width: 608px;
+  height: 532px;
+  position: absolute;
+  background-color: rgba(43, 46, 68, 0.9);
+  z-index: 20;
+  border-radius: 24px;
+  top: 49px;
+  padding: 44px 48px;
+  color: #fff;
+  text-align: center;
+}
+
+.sign-popup .close-sign {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  cursor: pointer;
+}
+
+.sign-popup .inputs {
+  margin-top: 44px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sign-popup .inputs .input-container {
+  position: relative;
+  width: auto;
+}
+
+.sign-popup .inputs .input-container embed {
+  position: absolute;
+  right: 13px;
+  top: 13px;
+}
+
+.sign-popup .inputs input {
+  width: 244px;
+  height: 44px;
+  margin-bottom: 24px;
+  border-radius: 6px;
+  border: none;
+  padding-left: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.sign-popup .inputs input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #969CBF;
+}
+
+.sign-popup .inputs input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #969CBF;
+}
+
+.sign-popup .inputs input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #969CBF;
+}
+
+.sign-popup .inputs input::placeholder {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #969CBF;
+}
+
+.sign-popup .inputs input:focus {
+  outline: none;
+}
+
+.sign-popup button {
+  width: 244px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.sign-popup p {
+  margin-top: 23px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.sign-popup p a {
+  color: #E6F64B;
+}
+
+.sign-popup p a:hover {
+  color: #E9F75E;
+  text-decoration: none;
 }
 
 header {
