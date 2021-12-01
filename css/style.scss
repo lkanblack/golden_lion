@@ -648,11 +648,16 @@ footer {
             a {
                 margin-right:14px;
             }
+            .nav-container:last-child {
+                margin-right: 0;
+            }
         }
     }
     .hero {
         flex-direction: column;
-
+        embed {
+            width: 100%;
+        }
         &-descr {
             width: 100%;
             margin: 30px 0px;
@@ -663,6 +668,7 @@ footer {
         flex-direction: column;
         .block {
             width: 100%;
+
         }
         .dragon {
             position: static;
@@ -672,8 +678,8 @@ footer {
         .popular-blocks {
             justify-content: start;
             .popular-block {
-                width: 30%;
-                margin-right: 3%;
+                width: 45%;
+                
             }
             .popular-block:last-child {
                 align-self: flex-end;
@@ -1060,11 +1066,11 @@ footer {
             embed {
                 width: 60%;
                 left: -20px;
-                top: -60px;
+                top: -80px;
             }
             .bag {
                 width: 100%;
-                left: -160px;
+                left: -210px;
                 top: -60px;
             }
             h5 {
@@ -1088,7 +1094,8 @@ footer {
         &-blocks {
             flex-direction: column;
             .popular-block {
-                width: 100%;
+                width: 100% !important;
+                margin: 0 !important;
             }
         }
     }
