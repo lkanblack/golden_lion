@@ -705,29 +705,47 @@ footer .terms a:hover {
   font-size: 20px;
 }
 
+@media screen and (max-width: 1280px) {
+  .container-fluid {
+    padding: 0 48px;
+  }
+  header nav {
+    margin-top: 14px;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .container-fluid {
     padding: 0 48px;
   }
   header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   header a {
-    width: 40%;
+    width: 80%;
   }
   header a img {
-    width: 80%;
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   header .buttons {
     margin: 24px 0px;
   }
+  header nav {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
   header nav a {
     margin-right: 14px;
+  }
+  header nav .nav-container:last-child {
+    margin-right: 0;
   }
   .hero embed {
     width: 70%;
@@ -876,6 +894,7 @@ footer .terms a:hover {
     text-align: center;
   }
   header .burger-menu {
+    text-align: left;
     display: block;
     position: absolute;
     left: 0;

@@ -547,25 +547,40 @@ footer {
     }
 }
 
+@media screen and (max-width: 1280px){
+    .container-fluid {
+        padding: 0 48px;
+    }
+    header {
+        nav {
+            margin-top: 14px;
+        }
+    }
+}
+
 @media screen and (max-width: 1000px){
     .container-fluid {
         padding: 0 48px;
     }
     header {
-        display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         a {
-            width: 40%;
+            width: 80%;
             img {
-                width: 80%;
+                width: 100%;
+                order: 1;
             }
         }
         .buttons {
             margin: 24px 0px;
         }
         nav {
+            order: 3;
             a {
                 margin-right:14px;
+            }
+            .nav-container:last-child {
+                margin-right: 0;
             }
         }
     }
@@ -714,6 +729,7 @@ footer {
         position: relative;
         text-align: center;
         .burger-menu {
+            text-align: left;
             display: block;
             position: absolute;
             left: 0;
