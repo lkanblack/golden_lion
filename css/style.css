@@ -1187,7 +1187,6 @@ footer .terms a:hover {
   }
   .sign-popup {
     top: 10px;
-    position: fixed;
     width: 93%;
     height: auto;
     padding: 44px 44px 37px 44px;
@@ -1466,7 +1465,6 @@ footer .terms a:hover {
   }
   .sign-popup {
     top: 10px;
-    position: fixed;
     width: 93%;
     height: auto;
     padding: 44px 44px 37px 44px;
@@ -1514,7 +1512,7 @@ footer .terms a:hover {
 
 @media screen and (max-width: 420px) {
   .blocks .block .bag {
-    margin-left: -190px;
+    margin-left: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

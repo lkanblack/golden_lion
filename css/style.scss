@@ -1004,7 +1004,6 @@ footer {
     // POPUPS
     .sign-popup {
         top: 10px;
-        position: fixed;
         width: 93%;
         height: auto;
         padding: 44px 44px 37px 44px;
@@ -1262,7 +1261,6 @@ footer {
     // POPUPS
     .sign-popup {
         top: 10px;
-        position: fixed;
         width: 93%;
         height: auto;
         padding: 44px 44px 37px 44px;
@@ -1309,7 +1307,7 @@ footer {
     .blocks {
         .block {
             .bag {
-                margin-left: -190px;
+                margin-left: 15px;
             }
         }
     }
