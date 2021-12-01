@@ -786,6 +786,9 @@ footer {
     }
 }
 @media screen and (max-width: 600px) {
+    .cookies {
+        top: 5%;
+    }
     .container-fluid {
         padding: 0 24px;
     }
@@ -1299,6 +1302,15 @@ footer {
         }
         p {
             margin-bottom: 0;
+        }
+    }
+}
+@media screen and (max-width: 420px) {
+    .blocks {
+        .block {
+            .bag {
+                margin-left: -190px;
+            }
         }
     }
 }
