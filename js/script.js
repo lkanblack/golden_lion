@@ -59,3 +59,13 @@ btn.addEventListener('click', function(){
         pass.parentElement.classList.add('red-alert');
     }
 });
+
+// COOKIES ALLOW
+let allow_btn = document.querySelector('.allow');
+let overlay = document.querySelector('.overlay');
+let cookies = document.querySelector('.cookies');
+
+allow_btn.addEventListener('click', function(){
+    overlay.style.display = 'none';
+    cookies.style.display = 'none';
+});

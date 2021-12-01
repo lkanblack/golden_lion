@@ -50,6 +50,52 @@ body {
 .active-flex {
     display: flex !important;
 }
+// COOKIES + OVERLAY
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 50;
+    background-color: #171925;
+    opacity: 0.9;
+}
+.cookies {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 51;
+    width: 340px;
+    height: auto;
+    border-radius: 24px;
+    background-color: #e8e8e9;
+    padding: 24px 44px;
+    text-align: center;
+    p {
+        margin-top: 15px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    .buttons {
+        button {
+            width: 96px;
+            height: 44px;
+            border: 1px solid #7B7E96;
+            border-radius: 6px;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            &:hover {
+                background-color: #D1D1D4;
+            }
+        }
+        .allow {
+            margin-right: 16px;
+            background-color: #DEDEE0;
+        }
+    }
+}
 // POPUP SIGN IN + LOGIN + INPUTRS
 .input-container{
     position: relative;
@@ -579,7 +625,6 @@ footer {
         }
     }
 }
-
 @media screen and (max-width: 1000px){
     .container-fluid {
         padding: 0 48px;
@@ -663,7 +708,6 @@ footer {
         }
     }
 }
-
 @media screen and (max-width: 800px){
     .container-fluid {
         padding: 0 48px;
@@ -999,7 +1043,6 @@ footer {
         }
     }
 }
-
 @media screen and (max-width: 480px) {
     .container-fluid {
         padding: 0 24px;
