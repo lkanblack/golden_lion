@@ -7,6 +7,7 @@ let login_close = document.querySelector('.close-login');
 let burger_btn = document.querySelector('.burger-menu');
 let burger_list = document.querySelector('.burger-list');
 
+
 sign_btn.addEventListener('click', function() {
     sign_popup.classList.toggle('active-block');
 })

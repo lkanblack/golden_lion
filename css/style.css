@@ -670,6 +670,429 @@ footer .terms a:hover {
   font-size: 20px;
 }
 
+@media screen and (max-width: 1000px) {
+  .container-fluid {
+    padding: 0 48px;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header a {
+    width: 40%;
+  }
+  header a img {
+    width: 80%;
+  }
+  header .buttons {
+    margin: 24px 0px;
+  }
+  header nav a {
+    margin-right: 14px;
+  }
+  .hero embed {
+    width: 70%;
+  }
+  .hero-descr {
+    width: 100%;
+    margin: 30px 0px 30px 30px;
+  }
+  .blocks .block {
+    width: 49%;
+  }
+  .blocks .block embed {
+    width: 50%;
+    top: 0;
+  }
+  .blocks .block .bag {
+    width: 70%;
+    top: 10px;
+    left: 180px;
+  }
+  .blocks .dragon {
+    width: 50%;
+  }
+  .popular .popular-blocks {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .popular .popular-blocks .popular-block {
+    width: 30%;
+    margin-left: 3.2%;
+  }
+  .popular .popular-blocks .popular-block:last-child {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .reviews .review-block {
+    width: 100%;
+    margin-bottom: 15px;
+    height: auto;
+  }
+  .reviews .carousel {
+    height: auto;
+  }
+  footer embed {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container-fluid {
+    padding: 0 48px;
+  }
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header a {
+    width: 80%;
+  }
+  header a img {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  header .buttons {
+    margin: 24px 0px;
+  }
+  header nav {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  header nav a {
+    margin-right: 14px;
+  }
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-descr {
+    width: 100%;
+    margin: 30px 0px;
+  }
+  .blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blocks .block {
+    width: 100%;
+  }
+  .blocks .dragon {
+    position: static;
+  }
+  .popular .popular-blocks {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .popular .popular-blocks .popular-block {
+    width: 30%;
+    margin-right: 3%;
+  }
+  .popular .popular-blocks .popular-block:last-child {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .reviews .review-block {
+    width: 100%;
+    margin-bottom: 15px;
+    height: auto;
+  }
+  .reviews .carousel {
+    height: auto;
+  }
+  footer embed {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-fluid {
+    padding: 0 24px;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 24px 0;
+    position: relative;
+    text-align: center;
+  }
+  header .burger-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+  }
+  header .burger-list {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: rgba(41, 44, 65, 0.9);
+    padding: 24px;
+    border-radius: 6px;
+    z-index: 30;
+  }
+  header .burger-list a {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  header .burger-list a:hover {
+    text-decoration: none;
+  }
+  header .burger-list button {
+    width: 120px;
+    margin-bottom: 15px;
+    height: 33px;
+    font-weight: 500;
+  }
+  header .burger-list button:nth-child(2) {
+    margin-bottom: 0;
+  }
+  header .burger-list .login {
+    background-color: transparent;
+    border: 2px solid #B6BAD2;
+    color: #fff;
+    border-radius: 6px;
+  }
+  header .logo {
+    width: 194px;
+  }
+  header nav {
+    display: none;
+  }
+  header .buttons {
+    display: none;
+  }
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 104px;
+  }
+  .hero-descr {
+    width: 100%;
+    margin: 0;
+  }
+  .hero-descr h1 {
+    margin-top: 38px;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 52px;
+  }
+  .hero-descr p {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+  .hero-descr button {
+    height: 56px;
+    width: 100%;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  .blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blocks .block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+    height: 280px;
+    padding: 25px 32px;
+    margin-bottom: 56px;
+  }
+  .blocks .block-descr {
+    width: 100%;
+  }
+  .blocks .block embed {
+    width: 40%;
+    left: -20px;
+    top: -60px;
+  }
+  .blocks .block .bag {
+    width: 80%;
+    left: -230px;
+    top: -60px;
+  }
+  .blocks .block h5 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .blocks .dragon {
+    position: static;
+    width: 100%;
+  }
+  .popular h2 {
+    font-size: 25px;
+    line-height: 31px;
+    font-weight: 800;
+    margin-bottom: 50px;
+  }
+  .popular-blocks .popular-block {
+    width: 45%;
+  }
+  .reviews .carousel {
+    height: 430px;
+  }
+  .reviews h1 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .reviews h1 span {
+    color: #E6F64B;
+  }
+  .reviews .gem {
+    width: 76px;
+    top: 40px;
+  }
+  .reviews .un_gem {
+    width: 80px;
+  }
+  .reviews .review-block {
+    width: 100%;
+    padding: 32px;
+    height: 100%;
+  }
+  .reviews .review-block h4 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .reviews .review-block p {
+    font-size: 14px;
+  }
+  .reviews .review-block_body {
+    margin-top: 21px;
+    margin-bottom: 22px;
+  }
+  .reviews .review-block_body h4 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .reviews .review-block .rating {
+    margin: 0;
+  }
+  .reviews .review-block:nth-child(2) {
+    display: none !important;
+  }
+  .reviews .review-block:nth-child(3) {
+    display: none !important;
+  }
+  footer {
+    margin: 0;
+    margin-top: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .copyright {
+    width: 100%;
+  }
+  footer embed {
+    display: none;
+  }
+  footer .terms {
+    margin-top: 28px;
+    margin-bottom: 33px;
+  }
+  footer .terms span {
+    margin: 0 24px;
+  }
+  .privacy h2 {
+    margin-top: 40px;
+  }
+  .sign-popup {
+    top: 10px;
+    position: fixed;
+    width: 93%;
+    height: auto;
+    padding: 44px 44px 37px 44px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sign-popup h1 {
+    font-size: 32px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  .sign-popup .inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sign-popup .inputs input {
+    display: block;
+    width: 100%;
+  }
+  .sign-popup button {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .login-popup {
+    position: fixed;
+    top: 10px;
+    width: 93%;
+  }
+  .login-popup input {
+    width: 100%;
+  }
+  .login-popup a {
+    margin-top: -10px;
+  }
+  .login-popup p {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .container-fluid {
     padding: 0 24px;
@@ -936,6 +1359,15 @@ footer .terms a:hover {
     position: fixed;
     top: 10px;
     width: 93%;
+  }
+  .login-popup input {
+    width: 100%;
+  }
+  .login-popup a {
+    margin-top: -10px;
+  }
+  .login-popup p {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
