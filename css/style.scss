@@ -186,13 +186,35 @@ input {
             }
         }
     }
+    .red {
+        display: none;
+    }
+    .err {
+        display: none;
+    }
 }
 .red-alert {
     input {
         border: 2px solid $error;
     }
-    #at > svg{
-        color: red;
+    img {
+        fill: red;
+        display: none;
+    }
+    .err {
+        text-align: left;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 500;
+        color: $error;
+        margin-top: -22px;
+        margin-bottom: 4px;
+    }
+    .red {
+        display: block;
+    }
+    .err {
+        display: block;
     }
 }
 // HEADER

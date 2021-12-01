@@ -8,7 +8,6 @@ let burger_btn = document.querySelector('.burger-menu');
 let burger_list = document.querySelector('.burger-list');
 
 
-
 for (let btn of sign_btns){
     btn.addEventListener('click', function(){
         sign_popup.classList.toggle('active-block');
@@ -46,3 +45,17 @@ burger_btn.addEventListener('click', function(){
         })
     }
 })
+
+
+// LOGIN VALUES CHECK
+let btn = document.querySelector('#login-btn')
+let email = document.querySelector('#email');
+let pass = document.querySelector('#pass');
+
+
+btn.addEventListener('click', function(){
+    if(email.value == '' || pass.value == ''){
+        email.parentElement.classList.add('red-alert');
+        pass.parentElement.classList.add('red-alert');
+    }
+});

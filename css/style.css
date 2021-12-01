@@ -246,12 +246,39 @@ input:focus {
   text-decoration: none;
 }
 
+.login-popup .red {
+  display: none;
+}
+
+.login-popup .err {
+  display: none;
+}
+
 .red-alert input {
   border: 2px solid #F64B4B;
 }
 
-.red-alert #at > svg {
-  color: red;
+.red-alert img {
+  fill: red;
+  display: none;
+}
+
+.red-alert .err {
+  text-align: left;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 500;
+  color: #F64B4B;
+  margin-top: -22px;
+  margin-bottom: 4px;
+}
+
+.red-alert .red {
+  display: block;
+}
+
+.red-alert .err {
+  display: block;
 }
 
 header {
