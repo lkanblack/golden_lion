@@ -1,22 +1,31 @@
-let sign_btn = document.querySelector('.sign-up');
+let sign_btns = document.querySelectorAll('.sign-up');
 let sign_popup = document.querySelector('.sign-popup');
 let sign_close = document.querySelector('.close-sign');
-let login_btn = document.querySelector('.login');
+let login_btns = document.querySelectorAll('.login');
 let login_popup = document.querySelector('.login-popup');
 let login_close = document.querySelector('.close-login');
 let burger_btn = document.querySelector('.burger-menu');
 let burger_list = document.querySelector('.burger-list');
 
 
-sign_btn.addEventListener('click', function() {
-    sign_popup.classList.toggle('active-block');
-})
+
+for (let btn of sign_btns){
+    btn.addEventListener('click', function(){
+        sign_popup.classList.toggle('active-block');
+    });
+}
+
+for (let btn of login_btns){
+    btn.addEventListener('click', function(){
+        login_popup.classList.toggle('active-flex');
+    });
+}
+
+
 sign_close.addEventListener('click', function(){
     sign_popup.classList.toggle('active-block');
 })
-login_btn.addEventListener('click', function(){
-    login_popup.classList.toggle('active-flex');
-})
+
 login_close.addEventListener('click', function(){
     login_popup.classList.toggle('active-flex');
 })
