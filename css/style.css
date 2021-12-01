@@ -18,6 +18,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  font-family: 'Inter', sans-serif;
 }
 
 .container-fluid {

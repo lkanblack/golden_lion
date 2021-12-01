@@ -7,6 +7,10 @@
     <title>Golden Lion</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
 </head>
 <body>
 <div class="mask"></div>
@@ -49,17 +53,21 @@
         <img class="close-login" src="./img/close.svg" alt="X">
         <h1>Login</h1>
         <div class="login-inputs">
-            <div class="input-container red-alert">
-                <embed id="at" src="./img/inputs/Email.svg" alt="@">
-                <input type="text" placeholder="Email">
+            <div class="input-container">
+                <embed src="./img/inputs/Email.svg" alt="@">
+                <embed class="red" src="./img/inputs/Email-red.svg" alt="@">
+                <input id='email' type="text" placeholder="Email">
+                <div class="err">Email address is invalid</div>
             </div>
             <div class="input-container">
                 <embed src="./img/inputs/Password.svg" alt="Pass">
-                <input type="password" placeholder="Password">
+                <embed class="red" src="./img/inputs/Password-red.svg" alt="Pass">
+                <input id='pass' type="password" placeholder="Password">
+                <div class="err">Wrong password</div>
             </div>
         </div>
         <a href="#">Forgot your password?</a>
-        <button class="accent-btn">Login</button>
+        <button id='login-btn' class="accent-btn">Login</button>
         <p>Don’t have an account yet? <a href="#">Sign up</a></p>
     </div>
     <!-- HEADER -->
@@ -68,12 +76,31 @@
             <!-- HEADER -->
             <div class="col-md-12">
                 <header>
+                    <img src="./img/Menu.svg" alt="Menu" class="burger-menu">
+                    <div class="burger-list">
+                            <a href="#features">Features</a>
+                            <a href="#popular">Games</a>
+                            <a href="#reviews">Reviews</a>
+
+                            <button class="login">Login</button>
+                            <button class="sign-up accent-btn">Sign Up</button>
+                    </div>
                     <a href="./index.html">
-                        <img src="./img/Logo.svg" type="logo"></a>
+                        <img class="logo" src="./img/Logo.svg" type="logo">
+                    </a>
                     <nav>
-                        <a href="#">Features</a>
-                        <a href="#">Games</a>
-                        <a href="#">Reviews</a>
+                        <div class="nav-container">
+                            <a href="#features">Features</a>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="nav-container">
+                            <a href="#popular">Games</a>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="nav-container">
+                            <a href="#reviews">Reviews</a>
+                            <div class="dot"></div>
+                        </div>
                     </nav>
                     <div class="buttons">
                         <button class="login">Login</button>
